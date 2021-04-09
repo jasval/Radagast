@@ -14,9 +14,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        CarbonService.shared.startMonitoringNetwork()
         return true
     }
 
+    func applicationDidEnterBackground(_ application: UIApplication) {
+        CarbonService.shared.stopMonitoringNetwork()
+    }
+    
+    func applicationWillEnterForeground(_ application: UIApplication) {
+        CarbonService.shared.startMonitoringNetwork()
+    }
+    
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
