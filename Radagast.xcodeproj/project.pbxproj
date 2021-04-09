@@ -18,6 +18,11 @@
 		DDFDFC3B26208E07009F043A /* RadagastUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFC3A26208E07009F043A /* RadagastUITests.swift */; };
 		DDFDFC602620929F009F043A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DDFDFC5F2620929F009F043A /* Alamofire */; };
 		DDFDFC6F262093CD009F043A /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = DDFDFC6E262093CD009F043A /* Charts */; };
+		DDFDFC74262094AE009F043A /* CarbonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFC73262094AE009F043A /* CarbonService.swift */; };
+		DDFDFC7926209604009F043A /* GraphedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFC7826209604009F043A /* GraphedTableViewCell.swift */; };
+		DDFDFC7E26209646009F043A /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFC7D26209646009F043A /* HeaderTableViewCell.swift */; };
+		DDFDFC8326209667009F043A /* CarbonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFC8226209667009F043A /* CarbonTableViewController.swift */; };
+		DDFDFC8826209694009F043A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFC8726209694009F043A /* DetailViewController.swift */; };
 		F68DC3E550CEA639AF012D7C /* Pods_Radagast_RadagastUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6BDFFD587005378D898CB94 /* Pods_Radagast_RadagastUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +66,11 @@
 		DDFDFC3626208E07009F043A /* RadagastUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RadagastUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDFDFC3A26208E07009F043A /* RadagastUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadagastUITests.swift; sourceTree = "<group>"; };
 		DDFDFC3C26208E07009F043A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDFDFC73262094AE009F043A /* CarbonService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonService.swift; sourceTree = SOURCE_ROOT; };
+		DDFDFC7826209604009F043A /* GraphedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphedTableViewCell.swift; sourceTree = "<group>"; };
+		DDFDFC7D26209646009F043A /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
+		DDFDFC8226209667009F043A /* CarbonTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonTableViewController.swift; sourceTree = "<group>"; };
+		DDFDFC8726209694009F043A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +186,8 @@
 		DDFDFC4E262090BA009F043A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DDFDFC7826209604009F043A /* GraphedTableViewCell.swift */,
+				DDFDFC7D26209646009F043A /* HeaderTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -184,6 +196,8 @@
 			isa = PBXGroup;
 			children = (
 				DDFDFC1C26208E06009F043A /* MainViewController.swift */,
+				DDFDFC8226209667009F043A /* CarbonTableViewController.swift */,
+				DDFDFC8726209694009F043A /* DetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -198,6 +212,7 @@
 		DDFDFC51262090CC009F043A /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				DDFDFC73262094AE009F043A /* CarbonService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -470,9 +485,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDFDFC74262094AE009F043A /* CarbonService.swift in Sources */,
+				DDFDFC8326209667009F043A /* CarbonTableViewController.swift in Sources */,
+				DDFDFC7926209604009F043A /* GraphedTableViewCell.swift in Sources */,
 				DDFDFC1D26208E06009F043A /* MainViewController.swift in Sources */,
 				DDFDFC1926208E06009F043A /* AppDelegate.swift in Sources */,
+				DDFDFC7E26209646009F043A /* HeaderTableViewCell.swift in Sources */,
 				DDFDFC1B26208E06009F043A /* SceneDelegate.swift in Sources */,
+				DDFDFC8826209694009F043A /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
