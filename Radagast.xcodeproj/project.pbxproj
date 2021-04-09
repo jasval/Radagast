@@ -23,6 +23,19 @@
 		DDFDFC7E26209646009F043A /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFC7D26209646009F043A /* HeaderTableViewCell.swift */; };
 		DDFDFC8326209667009F043A /* CarbonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFC8226209667009F043A /* CarbonTableViewController.swift */; };
 		DDFDFC8826209694009F043A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFC8726209694009F043A /* DetailViewController.swift */; };
+		DDFDFC9626209B4F009F043A /* DateFormatter+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFC9526209B4F009F043A /* DateFormatter+Ext.swift */; };
+		DDFDFC9E2620A086009F043A /* CarbonFactors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFC9D2620A086009F043A /* CarbonFactors.swift */; };
+		DDFDFCA32620A0A0009F043A /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFCA22620A0A0009F043A /* APIResponse.swift */; };
+		DDFDFCA82620A0FD009F043A /* CarbonForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFCA72620A0FD009F043A /* CarbonForecast.swift */; };
+		DDFDFCAE2620A18B009F043A /* CarbonIntensityForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFCAD2620A18B009F043A /* CarbonIntensityForecast.swift */; };
+		DDFDFCB32620A1BF009F043A /* CarbonIntensityLevels.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFCB22620A1BF009F043A /* CarbonIntensityLevels.swift */; };
+		DDFDFCB82620A207009F043A /* CarbonStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFCB72620A207009F043A /* CarbonStatistics.swift */; };
+		DDFDFCBD2620A240009F043A /* CarbonGeneration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFCBC2620A240009F043A /* CarbonGeneration.swift */; };
+		DDFDFCC22620A280009F043A /* GenerationFactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFCC12620A280009F043A /* GenerationFactor.swift */; };
+		DDFDFCCA2620A2DE009F043A /* CarbonGenerationTimeFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFCC92620A2DE009F043A /* CarbonGenerationTimeFrame.swift */; };
+		DDFDFCCF2620A34C009F043A /* CarbonRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFCCE2620A34C009F043A /* CarbonRegion.swift */; };
+		DDFDFCDD2620A543009F043A /* CarbonRegionId.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFCDC2620A543009F043A /* CarbonRegionId.swift */; };
+		DDFDFCE22620A56D009F043A /* CarbonRegionIdData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFCE12620A56D009F043A /* CarbonRegionIdData.swift */; };
 		F68DC3E550CEA639AF012D7C /* Pods_Radagast_RadagastUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6BDFFD587005378D898CB94 /* Pods_Radagast_RadagastUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,11 +79,24 @@
 		DDFDFC3626208E07009F043A /* RadagastUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RadagastUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDFDFC3A26208E07009F043A /* RadagastUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadagastUITests.swift; sourceTree = "<group>"; };
 		DDFDFC3C26208E07009F043A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DDFDFC73262094AE009F043A /* CarbonService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonService.swift; sourceTree = SOURCE_ROOT; };
+		DDFDFC73262094AE009F043A /* CarbonService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CarbonService.swift; path = Radagast/Services/CarbonService/CarbonService.swift; sourceTree = SOURCE_ROOT; };
 		DDFDFC7826209604009F043A /* GraphedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphedTableViewCell.swift; sourceTree = "<group>"; };
 		DDFDFC7D26209646009F043A /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
 		DDFDFC8226209667009F043A /* CarbonTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonTableViewController.swift; sourceTree = "<group>"; };
 		DDFDFC8726209694009F043A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		DDFDFC9526209B4F009F043A /* DateFormatter+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Ext.swift"; sourceTree = "<group>"; };
+		DDFDFC9D2620A086009F043A /* CarbonFactors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonFactors.swift; sourceTree = "<group>"; };
+		DDFDFCA22620A0A0009F043A /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		DDFDFCA72620A0FD009F043A /* CarbonForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonForecast.swift; sourceTree = "<group>"; };
+		DDFDFCAD2620A18B009F043A /* CarbonIntensityForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonIntensityForecast.swift; sourceTree = "<group>"; };
+		DDFDFCB22620A1BF009F043A /* CarbonIntensityLevels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonIntensityLevels.swift; sourceTree = "<group>"; };
+		DDFDFCB72620A207009F043A /* CarbonStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonStatistics.swift; sourceTree = "<group>"; };
+		DDFDFCBC2620A240009F043A /* CarbonGeneration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonGeneration.swift; sourceTree = "<group>"; };
+		DDFDFCC12620A280009F043A /* GenerationFactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerationFactor.swift; sourceTree = "<group>"; };
+		DDFDFCC92620A2DE009F043A /* CarbonGenerationTimeFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonGenerationTimeFrame.swift; sourceTree = "<group>"; };
+		DDFDFCCE2620A34C009F043A /* CarbonRegion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonRegion.swift; sourceTree = "<group>"; };
+		DDFDFCDC2620A543009F043A /* CarbonRegionId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonRegionId.swift; sourceTree = "<group>"; };
+		DDFDFCE12620A56D009F043A /* CarbonRegionIdData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonRegionIdData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +231,7 @@
 		DDFDFC50262090C6009F043A /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				DDFDFCA22620A0A0009F043A /* APIResponse.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -212,7 +239,7 @@
 		DDFDFC51262090CC009F043A /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				DDFDFC73262094AE009F043A /* CarbonService.swift */,
+				DDFDFC9B2620A058009F043A /* CarbonService */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -227,6 +254,7 @@
 		DDFDFC53262090DA009F043A /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				DDFDFC9526209B4F009F043A /* DateFormatter+Ext.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -238,6 +266,41 @@
 				DDFDFC1A26208E06009F043A /* SceneDelegate.swift */,
 			);
 			path = LifeCycle;
+			sourceTree = "<group>";
+		};
+		DDFDFC9B2620A058009F043A /* CarbonService */ = {
+			isa = PBXGroup;
+			children = (
+				DDFDFC9C2620A06C009F043A /* Models */,
+				DDFDFC73262094AE009F043A /* CarbonService.swift */,
+			);
+			path = CarbonService;
+			sourceTree = "<group>";
+		};
+		DDFDFC9C2620A06C009F043A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DDFDFCAC2620A12F009F043A /* Sub-models */,
+				DDFDFC9D2620A086009F043A /* CarbonFactors.swift */,
+				DDFDFCA72620A0FD009F043A /* CarbonForecast.swift */,
+				DDFDFCB72620A207009F043A /* CarbonStatistics.swift */,
+				DDFDFCBC2620A240009F043A /* CarbonGeneration.swift */,
+				DDFDFCC92620A2DE009F043A /* CarbonGenerationTimeFrame.swift */,
+				DDFDFCDC2620A543009F043A /* CarbonRegionId.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DDFDFCAC2620A12F009F043A /* Sub-models */ = {
+			isa = PBXGroup;
+			children = (
+				DDFDFCAD2620A18B009F043A /* CarbonIntensityForecast.swift */,
+				DDFDFCB22620A1BF009F043A /* CarbonIntensityLevels.swift */,
+				DDFDFCC12620A280009F043A /* GenerationFactor.swift */,
+				DDFDFCCE2620A34C009F043A /* CarbonRegion.swift */,
+				DDFDFCE12620A56D009F043A /* CarbonRegionIdData.swift */,
+			);
+			path = "Sub-models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -486,13 +549,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDFDFC74262094AE009F043A /* CarbonService.swift in Sources */,
+				DDFDFCDD2620A543009F043A /* CarbonRegionId.swift in Sources */,
 				DDFDFC8326209667009F043A /* CarbonTableViewController.swift in Sources */,
+				DDFDFCC22620A280009F043A /* GenerationFactor.swift in Sources */,
+				DDFDFCBD2620A240009F043A /* CarbonGeneration.swift in Sources */,
+				DDFDFCAE2620A18B009F043A /* CarbonIntensityForecast.swift in Sources */,
+				DDFDFC9626209B4F009F043A /* DateFormatter+Ext.swift in Sources */,
+				DDFDFC9E2620A086009F043A /* CarbonFactors.swift in Sources */,
 				DDFDFC7926209604009F043A /* GraphedTableViewCell.swift in Sources */,
+				DDFDFCA32620A0A0009F043A /* APIResponse.swift in Sources */,
 				DDFDFC1D26208E06009F043A /* MainViewController.swift in Sources */,
 				DDFDFC1926208E06009F043A /* AppDelegate.swift in Sources */,
 				DDFDFC7E26209646009F043A /* HeaderTableViewCell.swift in Sources */,
 				DDFDFC1B26208E06009F043A /* SceneDelegate.swift in Sources */,
 				DDFDFC8826209694009F043A /* DetailViewController.swift in Sources */,
+				DDFDFCA82620A0FD009F043A /* CarbonForecast.swift in Sources */,
+				DDFDFCE22620A56D009F043A /* CarbonRegionIdData.swift in Sources */,
+				DDFDFCCA2620A2DE009F043A /* CarbonGenerationTimeFrame.swift in Sources */,
+				DDFDFCB82620A207009F043A /* CarbonStatistics.swift in Sources */,
+				DDFDFCCF2620A34C009F043A /* CarbonRegion.swift in Sources */,
+				DDFDFCB32620A1BF009F043A /* CarbonIntensityLevels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
