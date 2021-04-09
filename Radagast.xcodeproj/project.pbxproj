@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		DDFDFC1926208E06009F043A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFC1826208E06009F043A /* AppDelegate.swift */; };
 		DDFDFC1B26208E06009F043A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFC1A26208E06009F043A /* SceneDelegate.swift */; };
-		DDFDFC1D26208E06009F043A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFC1C26208E06009F043A /* ViewController.swift */; };
-		DDFDFC2026208E06009F043A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDFDFC1E26208E06009F043A /* Main.storyboard */; };
+		DDFDFC1D26208E06009F043A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFC1C26208E06009F043A /* MainViewController.swift */; };
 		DDFDFC2226208E07009F043A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDFDFC2126208E07009F043A /* Assets.xcassets */; };
 		DDFDFC2526208E07009F043A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDFDFC2326208E07009F043A /* LaunchScreen.storyboard */; };
 		DDFDFC3026208E07009F043A /* RadagastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFC2F26208E07009F043A /* RadagastTests.swift */; };
@@ -38,8 +37,7 @@
 		DDFDFC1526208E06009F043A /* Radagast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Radagast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDFDFC1826208E06009F043A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDFDFC1A26208E06009F043A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DDFDFC1C26208E06009F043A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DDFDFC1F26208E06009F043A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DDFDFC1C26208E06009F043A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		DDFDFC2126208E07009F043A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDFDFC2426208E07009F043A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DDFDFC2626208E07009F043A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,10 +97,13 @@
 		DDFDFC1726208E06009F043A /* Radagast */ = {
 			isa = PBXGroup;
 			children = (
-				DDFDFC1826208E06009F043A /* AppDelegate.swift */,
-				DDFDFC1A26208E06009F043A /* SceneDelegate.swift */,
-				DDFDFC1C26208E06009F043A /* ViewController.swift */,
-				DDFDFC1E26208E06009F043A /* Main.storyboard */,
+				DDFDFC54262090F2009F043A /* LifeCycle */,
+				DDFDFC4F262090C0009F043A /* ViewControllers */,
+				DDFDFC52262090D3009F043A /* ViewModels */,
+				DDFDFC4E262090BA009F043A /* Views */,
+				DDFDFC51262090CC009F043A /* Services */,
+				DDFDFC50262090C6009F043A /* Protocols */,
+				DDFDFC53262090DA009F043A /* Utilities */,
 				DDFDFC2126208E07009F043A /* Assets.xcassets */,
 				DDFDFC2326208E07009F043A /* LaunchScreen.storyboard */,
 				DDFDFC2626208E07009F043A /* Info.plist */,
@@ -126,6 +127,58 @@
 				DDFDFC3C26208E07009F043A /* Info.plist */,
 			);
 			path = RadagastUITests;
+			sourceTree = "<group>";
+		};
+		DDFDFC4E262090BA009F043A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DDFDFC4F262090C0009F043A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DDFDFC1C26208E06009F043A /* MainViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DDFDFC50262090C6009F043A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		DDFDFC51262090CC009F043A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DDFDFC52262090D3009F043A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DDFDFC53262090DA009F043A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		DDFDFC54262090F2009F043A /* LifeCycle */ = {
+			isa = PBXGroup;
+			children = (
+				DDFDFC1826208E06009F043A /* AppDelegate.swift */,
+				DDFDFC1A26208E06009F043A /* SceneDelegate.swift */,
+			);
+			path = LifeCycle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +286,6 @@
 			files = (
 				DDFDFC2526208E07009F043A /* LaunchScreen.storyboard in Resources */,
 				DDFDFC2226208E07009F043A /* Assets.xcassets in Resources */,
-				DDFDFC2026208E06009F043A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +310,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDFDFC1D26208E06009F043A /* ViewController.swift in Sources */,
+				DDFDFC1D26208E06009F043A /* MainViewController.swift in Sources */,
 				DDFDFC1926208E06009F043A /* AppDelegate.swift in Sources */,
 				DDFDFC1B26208E06009F043A /* SceneDelegate.swift in Sources */,
 			);
@@ -296,14 +348,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DDFDFC1E26208E06009F043A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DDFDFC1F26208E06009F043A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DDFDFC2326208E07009F043A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -446,7 +490,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.returngenerics.Radagast;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -465,7 +509,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.returngenerics.Radagast;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
