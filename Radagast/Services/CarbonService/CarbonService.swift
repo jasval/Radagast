@@ -165,7 +165,7 @@ final class CarbonService {
                 debugPrint(response.metrics ?? response.serializationDuration)
             }
         case .cIForecast:
-            AF.request(request).validate(statusCode: 200..<300).responseDecodable(of: CarbonForecast.self) { response in
+            AF.request(request).validate(statusCode: 200..<300).responseDecodable(of: CarbonForecastResponse.self) { response in
                 completionHandler(response.value, response.error)
                 debugPrint(response.metrics ?? response.serializationDuration)
             }
@@ -180,7 +180,7 @@ final class CarbonService {
                 debugPrint(response.metrics ?? response.serializationDuration)
             }
         case .cIRegionalTimeframe:
-            AF.request(request).validate(statusCode: 200..<300).responseDecodable(of: CarbonGenerationTimeFrame.self) { response in
+            AF.request(request).validate(statusCode: 200..<300).responseDecodable(of: CarbonGenerationTimeFrameResponse.self) { response in
                 completionHandler(response.value, response.error)
                 debugPrint(response.metrics ?? response.serializationDuration)
             }
@@ -193,7 +193,7 @@ final class CarbonService {
     }
     
     // MARK: Router
-    enum Router: URLRequestConvertible {
+    enum Router: URLRequestConvertible, Hashable {
         
         case getFactors,
              getCurrentNationalForecast,

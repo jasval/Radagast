@@ -9,8 +9,7 @@ import UIKit
 
 class MainViewController: UIViewController {
     
-    let carbonTable = CarbonTableViewController()
-    
+    let carbonTable = CarbonTableViewController(style: .grouped)
     let headerTitleLabel: UILabel = {
         let label = UILabel(frame: .zero)
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -31,6 +30,7 @@ class MainViewController: UIViewController {
         button.setTitleColor(UIColor.getDynamicColorFor(.buttonText), for: .normal)
         button.layer.cornerRadius = 25
         button.layer.masksToBounds = true
+        button.addTarget(self, action: #selector(refreshTapped(_:)), for: .touchDown)
         return button
     }()
 
@@ -46,7 +46,7 @@ class MainViewController: UIViewController {
         
         // Colouring
         self.view.backgroundColor = .systemBackground
-        carbonTable.view.backgroundColor = UIColor.getDynamicColorFor(.background)
+        carbonTable.view.backgroundColor = .systemBackground
 
         // Add ViewControllers
         self.add(carbonTable, constraints: [
@@ -79,6 +79,8 @@ class MainViewController: UIViewController {
 
     }
 
-
+    @objc func refreshTapped(_ sender: UIButton) {
+        carbonTable.viewModel.requestData(for: [.all])
+    }
 }
 

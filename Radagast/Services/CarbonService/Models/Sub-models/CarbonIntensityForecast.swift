@@ -30,4 +30,10 @@ struct CarbonIntensityForecast: Decodable {
             index = .unknown
         }
     }
+    
+    init() {
+        forecast = 0
+        actual = 0
+        index = .unknown
+    }
 }

@@ -22,4 +22,11 @@ extension DateFormatter {
         df.dateFormat = "YYYY-MM-DD"
         return df
     }()
+    
+    static let viewReady: DateFormatter = {
+        let df = DateFormatter()
+        df.dateStyle = .short
+        df.timeStyle = .medium
+        return df
+    }()
 }

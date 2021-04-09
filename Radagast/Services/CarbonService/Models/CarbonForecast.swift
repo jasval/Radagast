@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CarbonForecast: APIResponse {
+struct CarbonForecast: Decodable {
     let from: Date
     let to: Date
     let cIntensity: CarbonIntensityForecast
@@ -44,4 +44,30 @@ struct CarbonForecast: APIResponse {
         true
     }
 
+}
+
+struct CarbonForecastResponse: APIResponse {
+
+    let data: [CarbonForecast]
+    
+    enum CodingKeys: String, CodingKey {
+        case data
+    }
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        
+        var dataContainer = try container.nestedUnkeyedContainer(forKey: .data)
+        var dataCollection = [CarbonForecast]()
+        while !dataContainer.isAtEnd {
+            let forecast = try dataContainer.decode(CarbonForecast.self)
+            dataCollection.append(forecast)
+        }
+        
+        data = dataCollection
+    }
+    
+    func validate() -> Bool {
+        return true
+    }
 }

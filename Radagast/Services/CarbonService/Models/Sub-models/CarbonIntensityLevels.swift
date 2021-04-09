@@ -23,6 +23,10 @@ struct CarbonIntensityLevels: Decodable {
         case high = "high"
         case veryHigh = "very high"
         case unknown
+        
+        var string: String {
+            self.rawValue.capitalized
+        }
     }
     
     init(from decoder: Decoder) throws {

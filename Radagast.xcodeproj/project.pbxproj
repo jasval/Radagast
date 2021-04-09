@@ -39,6 +39,7 @@
 		DDFDFCF92620AB87009F043A /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFCF82620AB87009F043A /* UIViewController+Ext.swift */; };
 		DDFDFCFE2620B0C8009F043A /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFCFD2620B0C8009F043A /* UIColor+Ext.swift */; };
 		DDFDFD032620DB72009F043A /* ExpandableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFD022620DB72009F043A /* ExpandableCell.swift */; };
+		DDFDFD1D2620E1ED009F043A /* CarbonTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFD1C2620E1ED009F043A /* CarbonTableViewModel.swift */; };
 		F68DC3E550CEA639AF012D7C /* Pods_Radagast_RadagastUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6BDFFD587005378D898CB94 /* Pods_Radagast_RadagastUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -103,6 +104,7 @@
 		DDFDFCF82620AB87009F043A /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 		DDFDFCFD2620B0C8009F043A /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
 		DDFDFD022620DB72009F043A /* ExpandableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableCell.swift; sourceTree = "<group>"; };
+		DDFDFD1C2620E1ED009F043A /* CarbonTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonTableViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,6 +256,7 @@
 		DDFDFC52262090D3009F043A /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				DDFDFD1C2620E1ED009F043A /* CarbonTableViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -574,6 +577,7 @@
 				DDFDFC7E26209646009F043A /* HeaderTableViewCell.swift in Sources */,
 				DDFDFC1B26208E06009F043A /* SceneDelegate.swift in Sources */,
 				DDFDFCF92620AB87009F043A /* UIViewController+Ext.swift in Sources */,
+				DDFDFD1D2620E1ED009F043A /* CarbonTableViewModel.swift in Sources */,
 				DDFDFC8826209694009F043A /* DetailViewController.swift in Sources */,
 				DDFDFCA82620A0FD009F043A /* CarbonForecast.swift in Sources */,
 				DDFDFCE22620A56D009F043A /* CarbonRegionIdData.swift in Sources */,
