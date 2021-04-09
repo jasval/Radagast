@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DDFDFC1926208E06009F043A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFC1826208E06009F043A /* AppDelegate.swift */; };
+		DDFDFC1B26208E06009F043A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFC1A26208E06009F043A /* SceneDelegate.swift */; };
+		DDFDFC1D26208E06009F043A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFC1C26208E06009F043A /* ViewController.swift */; };
+		DDFDFC2026208E06009F043A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDFDFC1E26208E06009F043A /* Main.storyboard */; };
+		DDFDFC2226208E07009F043A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDFDFC2126208E07009F043A /* Assets.xcassets */; };
+		DDFDFC2526208E07009F043A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDFDFC2326208E07009F043A /* LaunchScreen.storyboard */; };
+		DDFDFC3026208E07009F043A /* RadagastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFC2F26208E07009F043A /* RadagastTests.swift */; };
+		DDFDFC3B26208E07009F043A /* RadagastUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFC3A26208E07009F043A /* RadagastUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DDFDFC2C26208E07009F043A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDFDFC0D26208E06009F043A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDFDFC1426208E06009F043A;
+			remoteInfo = Radagast;
+		};
+		DDFDFC3726208E07009F043A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDFDFC0D26208E06009F043A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDFDFC1426208E06009F043A;
+			remoteInfo = Radagast;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DDFDFC1526208E06009F043A /* Radagast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Radagast.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDFDFC1826208E06009F043A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DDFDFC1A26208E06009F043A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DDFDFC1C26208E06009F043A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DDFDFC1F26208E06009F043A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DDFDFC2126208E07009F043A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DDFDFC2426208E07009F043A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DDFDFC2626208E07009F043A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDFDFC2B26208E07009F043A /* RadagastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RadagastTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDFDFC2F26208E07009F043A /* RadagastTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadagastTests.swift; sourceTree = "<group>"; };
+		DDFDFC3126208E07009F043A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDFDFC3626208E07009F043A /* RadagastUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RadagastUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDFDFC3A26208E07009F043A /* RadagastUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadagastUITests.swift; sourceTree = "<group>"; };
+		DDFDFC3C26208E07009F043A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DDFDFC1226208E06009F043A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDFDFC2826208E07009F043A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDFDFC3326208E07009F043A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DDFDFC0C26208E06009F043A = {
+			isa = PBXGroup;
+			children = (
+				DDFDFC1726208E06009F043A /* Radagast */,
+				DDFDFC2E26208E07009F043A /* RadagastTests */,
+				DDFDFC3926208E07009F043A /* RadagastUITests */,
+				DDFDFC1626208E06009F043A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DDFDFC1626208E06009F043A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDFDFC1526208E06009F043A /* Radagast.app */,
+				DDFDFC2B26208E07009F043A /* RadagastTests.xctest */,
+				DDFDFC3626208E07009F043A /* RadagastUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DDFDFC1726208E06009F043A /* Radagast */ = {
+			isa = PBXGroup;
+			children = (
+				DDFDFC1826208E06009F043A /* AppDelegate.swift */,
+				DDFDFC1A26208E06009F043A /* SceneDelegate.swift */,
+				DDFDFC1C26208E06009F043A /* ViewController.swift */,
+				DDFDFC1E26208E06009F043A /* Main.storyboard */,
+				DDFDFC2126208E07009F043A /* Assets.xcassets */,
+				DDFDFC2326208E07009F043A /* LaunchScreen.storyboard */,
+				DDFDFC2626208E07009F043A /* Info.plist */,
+			);
+			path = Radagast;
+			sourceTree = "<group>";
+		};
+		DDFDFC2E26208E07009F043A /* RadagastTests */ = {
+			isa = PBXGroup;
+			children = (
+				DDFDFC2F26208E07009F043A /* RadagastTests.swift */,
+				DDFDFC3126208E07009F043A /* Info.plist */,
+			);
+			path = RadagastTests;
+			sourceTree = "<group>";
+		};
+		DDFDFC3926208E07009F043A /* RadagastUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DDFDFC3A26208E07009F043A /* RadagastUITests.swift */,
+				DDFDFC3C26208E07009F043A /* Info.plist */,
+			);
+			path = RadagastUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DDFDFC1426208E06009F043A /* Radagast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDFDFC3F26208E07009F043A /* Build configuration list for PBXNativeTarget "Radagast" */;
+			buildPhases = (
+				DDFDFC1126208E06009F043A /* Sources */,
+				DDFDFC1226208E06009F043A /* Frameworks */,
+				DDFDFC1326208E06009F043A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Radagast;
+			productName = Radagast;
+			productReference = DDFDFC1526208E06009F043A /* Radagast.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DDFDFC2A26208E07009F043A /* RadagastTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDFDFC4226208E07009F043A /* Build configuration list for PBXNativeTarget "RadagastTests" */;
+			buildPhases = (
+				DDFDFC2726208E07009F043A /* Sources */,
+				DDFDFC2826208E07009F043A /* Frameworks */,
+				DDFDFC2926208E07009F043A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDFDFC2D26208E07009F043A /* PBXTargetDependency */,
+			);
+			name = RadagastTests;
+			productName = RadagastTests;
+			productReference = DDFDFC2B26208E07009F043A /* RadagastTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DDFDFC3526208E07009F043A /* RadagastUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDFDFC4526208E07009F043A /* Build configuration list for PBXNativeTarget "RadagastUITests" */;
+			buildPhases = (
+				DDFDFC3226208E07009F043A /* Sources */,
+				DDFDFC3326208E07009F043A /* Frameworks */,
+				DDFDFC3426208E07009F043A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDFDFC3826208E07009F043A /* PBXTargetDependency */,
+			);
+			name = RadagastUITests;
+			productName = RadagastUITests;
+			productReference = DDFDFC3626208E07009F043A /* RadagastUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DDFDFC0D26208E06009F043A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					DDFDFC1426208E06009F043A = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					DDFDFC2A26208E07009F043A = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = DDFDFC1426208E06009F043A;
+					};
+					DDFDFC3526208E07009F043A = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = DDFDFC1426208E06009F043A;
+					};
+				};
+			};
+			buildConfigurationList = DDFDFC1026208E06009F043A /* Build configuration list for PBXProject "Radagast" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DDFDFC0C26208E06009F043A;
+			productRefGroup = DDFDFC1626208E06009F043A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DDFDFC1426208E06009F043A /* Radagast */,
+				DDFDFC2A26208E07009F043A /* RadagastTests */,
+				DDFDFC3526208E07009F043A /* RadagastUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DDFDFC1326208E06009F043A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDFDFC2526208E07009F043A /* LaunchScreen.storyboard in Resources */,
+				DDFDFC2226208E07009F043A /* Assets.xcassets in Resources */,
+				DDFDFC2026208E06009F043A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDFDFC2926208E07009F043A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDFDFC3426208E07009F043A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DDFDFC1126208E06009F043A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDFDFC1D26208E06009F043A /* ViewController.swift in Sources */,
+				DDFDFC1926208E06009F043A /* AppDelegate.swift in Sources */,
+				DDFDFC1B26208E06009F043A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDFDFC2726208E07009F043A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDFDFC3026208E07009F043A /* RadagastTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDFDFC3226208E07009F043A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDFDFC3B26208E07009F043A /* RadagastUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DDFDFC2D26208E07009F043A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDFDFC1426208E06009F043A /* Radagast */;
+			targetProxy = DDFDFC2C26208E07009F043A /* PBXContainerItemProxy */;
+		};
+		DDFDFC3826208E07009F043A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDFDFC1426208E06009F043A /* Radagast */;
+			targetProxy = DDFDFC3726208E07009F043A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DDFDFC1E26208E06009F043A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDFDFC1F26208E06009F043A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DDFDFC2326208E07009F043A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDFDFC2426208E07009F043A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DDFDFC3D26208E07009F043A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DDFDFC3E26208E07009F043A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DDFDFC4026208E07009F043A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3FH52996L3;
+				INFOPLIST_FILE = Radagast/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.returngenerics.Radagast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DDFDFC4126208E07009F043A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3FH52996L3;
+				INFOPLIST_FILE = Radagast/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.returngenerics.Radagast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DDFDFC4326208E07009F043A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3FH52996L3;
+				INFOPLIST_FILE = RadagastTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.returngenerics.RadagastTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Radagast.app/Radagast";
+			};
+			name = Debug;
+		};
+		DDFDFC4426208E07009F043A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3FH52996L3;
+				INFOPLIST_FILE = RadagastTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.returngenerics.RadagastTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Radagast.app/Radagast";
+			};
+			name = Release;
+		};
+		DDFDFC4626208E07009F043A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3FH52996L3;
+				INFOPLIST_FILE = RadagastUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.returngenerics.RadagastUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Radagast;
+			};
+			name = Debug;
+		};
+		DDFDFC4726208E07009F043A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3FH52996L3;
+				INFOPLIST_FILE = RadagastUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.returngenerics.RadagastUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Radagast;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DDFDFC1026208E06009F043A /* Build configuration list for PBXProject "Radagast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDFDFC3D26208E07009F043A /* Debug */,
+				DDFDFC3E26208E07009F043A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDFDFC3F26208E07009F043A /* Build configuration list for PBXNativeTarget "Radagast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDFDFC4026208E07009F043A /* Debug */,
+				DDFDFC4126208E07009F043A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDFDFC4226208E07009F043A /* Build configuration list for PBXNativeTarget "RadagastTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDFDFC4326208E07009F043A /* Debug */,
+				DDFDFC4426208E07009F043A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDFDFC4526208E07009F043A /* Build configuration list for PBXNativeTarget "RadagastUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDFDFC4626208E07009F043A /* Debug */,
+				DDFDFC4726208E07009F043A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DDFDFC0D26208E06009F043A /* Project object */;
+}
