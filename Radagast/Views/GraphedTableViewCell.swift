@@ -7,7 +7,9 @@
 
 import UIKit
 
-class GraphedTableViewCell: UITableViewCell {
+class GraphedTableViewCell: UITableViewCell, ExpandableCell {
+    
+    static let reuseIdentifier = "GraphedTableViewCell"
 
     override func awakeFromNib() {
         super.awakeFromNib()

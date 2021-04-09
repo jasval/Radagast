@@ -7,7 +7,9 @@
 
 import UIKit
 
-class HeaderTableViewCell: UITableViewCell {
+class HeaderTableViewCell: UITableViewCell, ExpandableCell {
+    
+    static let reuseIdentifier = "HeaderTableViewCell"
 
     override func awakeFromNib() {
         super.awakeFromNib()
