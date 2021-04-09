@@ -5,8 +5,8 @@
 //  Created by Jasper Valdivia on 09/04/2021.
 //
 
-import Foundation
 import Alamofire
+import NotificationBannerSwift
 
 final class CarbonService {
     
@@ -96,18 +96,56 @@ final class CarbonService {
     // MARK: - Network Monitoring
     // We asume a website that is not often down.
     private let manager = NetworkReachabilityManager(host: "www.google.com")
+    private var previousStatus: NetworkReachabilityManager.NetworkReachabilityStatus?
+    private var banner: NotificationBanner?
     
     // TODO: Add notifications to inform the UI accross the app to change accordingly
     func startMonitoringNetwork() {
-        manager?.startListening { status in
+        manager?.startListening { [weak self] status in
+            var icon: UIImageView
+            let title: String
+            var subtitle: String
+            let style: BannerStyle
+            if let previousBanner = self?.banner {
+                previousBanner.dismiss()
+            }
+            guard let _ = self?.previousStatus else {
+                self?.previousStatus = status
+                return
+            }
             switch status {
             case .notReachable:
-                print("Network not reachable")
-            case .reachable(_):
-                print("Network is reachable")
+                icon = UIImageView(image: UIImage(systemName: "wifi.exclamationmark"))
+                title = "Offline"
+                subtitle = "You lost connection!"
+                style = .danger
+            case .reachable(let connectionType):
+                var oppositeType: NetworkReachabilityManager.NetworkReachabilityStatus.ConnectionType
+                title = "Online"
+                subtitle = "You regained connection!"
+                switch connectionType {
+                case .cellular:
+                    oppositeType = .ethernetOrWiFi
+                    icon = UIImageView(image: UIImage(systemName: "antenna.radiowaves.left.and.right"))
+                case .ethernetOrWiFi:
+                    oppositeType = .cellular
+                    icon = UIImageView(image: UIImage(systemName: "wifi"))
+                }
+                if self?.previousStatus == .reachable(oppositeType) {
+                    subtitle = "You switched connection!"
+                }
+                style = .success
             case .unknown:
-                print("Undefined network state")
+                title = "Unknown State"
+                subtitle = "We have no heckin' idea..."
+                icon = UIImageView(image: UIImage(systemName: "waveform.path.ecg"))
+                style = .info
             }
+            icon.tintColor = .white
+            self?.banner = NotificationBanner(title: title, subtitle: subtitle, leftView: icon, style: style)
+            self?.banner?.dismissOnTap = true
+            self?.banner?.show()
+            self?.previousStatus = status
         }
     }
     
