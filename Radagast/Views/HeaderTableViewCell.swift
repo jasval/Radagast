@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HeaderTableViewCell: UITableViewCell, ExpandableCell {
+class HeaderTableViewCell: UITableViewCell {
     
     static let reuseIdentifier = "HeaderTableViewCell"
 

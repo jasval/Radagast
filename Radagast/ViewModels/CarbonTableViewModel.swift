@@ -13,7 +13,7 @@ class CarbonTableViewModel {
         var name: String
         var forecasted: Float?
         var levels: Float?
-        var index: String?
+        var index: CarbonIntensityLevels.IntensityIndex?
         var fromTo: String?
         var lastUpdated: String
     }
@@ -92,12 +92,12 @@ class CarbonTableViewModel {
             tableData.national.append(CellData(name: "National",
                                                forecasted: data.cIntensity.forecast,
                                                levels: data.cIntensity.actual,
-                                               index: data.cIntensity.index.string,
+                                               index: data.cIntensity.index,
                                                fromTo: dateString,
                                                lastUpdated: nowString))
         } else if var model = tableData.national.first {
             model.forecasted = data.cIntensity.forecast
-            model.index = data.cIntensity.index.string
+            model.index = data.cIntensity.index
             model.levels = data.cIntensity.actual
             model.fromTo = dateString
             model.lastUpdated = nowString
@@ -110,7 +110,7 @@ class CarbonTableViewModel {
         for data in collection {
             tableData.regional = data.regions.map { (region) -> CellData in
 
-                return CellData(name: region.dno + " " + region.shortname, forecasted: region.intensity.forecast, levels: region.intensity.actual, index: region.intensity.index.string, lastUpdated: nowString)
+                return CellData(name: region.dno + " " + region.shortname, forecasted: region.intensity.forecast, levels: region.intensity.actual, index: region.intensity.index, lastUpdated: nowString)
             }
         }
         delegate?.update(with: tableData)

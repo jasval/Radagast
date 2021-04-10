@@ -33,6 +33,8 @@ class CarbonTableViewController: UITableViewController {
         tableView.dataSource = dataSource
         tableView.delegate = self
         tableView.contentInset = UIEdgeInsets(top: -30, left: 0, bottom: 0, right: 0)
+        tableView.estimatedRowHeight = 60
+        tableView.rowHeight = UITableView.automaticDimension
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             self.viewModel.requestData(for: [.all])
@@ -56,14 +58,17 @@ extension CarbonTableViewController {
             case 0:
                 let cell = tableView.dequeueReusableCell(withIdentifier: HeaderTableViewCell.reuseIdentifier, for: indexPath)
                 cell.textLabel?.text = listItem.name
+                
                 return cell
             case 1:
-                let cell = tableView.dequeueReusableCell(withIdentifier: GraphedTableViewCell.reuseIdentifier, for: indexPath)
-                cell.textLabel?.text = listItem.name
-                return cell
+                if let cell = tableView.dequeueReusableCell(withIdentifier: GraphedTableViewCell.reuseIdentifier, for: indexPath) as? GraphedTableViewCell {
+                    cell.configure(with: listItem)
+                    return cell
+                }
             default:
-                return UITableViewCell()
+                break
             }
+            return UITableViewCell()
         }
     }
 }
