@@ -7,7 +7,9 @@
 
 import Foundation
 
-struct CarbonRegion: Decodable {
+struct CarbonRegion: APIStructure {
+    var isValid: Bool { true }
+    
     
     let id: Float
     let dno: String

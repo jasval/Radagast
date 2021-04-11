@@ -25,7 +25,7 @@
 		DDFDFC8826209694009F043A /* RegionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFC8726209694009F043A /* RegionDetailViewController.swift */; };
 		DDFDFC9626209B4F009F043A /* DateFormatter+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFC9526209B4F009F043A /* DateFormatter+Ext.swift */; };
 		DDFDFC9E2620A086009F043A /* CarbonFactors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFC9D2620A086009F043A /* CarbonFactors.swift */; };
-		DDFDFCA32620A0A0009F043A /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFCA22620A0A0009F043A /* APIResponse.swift */; };
+		DDFDFCA32620A0A0009F043A /* APIStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFCA22620A0A0009F043A /* APIStructure.swift */; };
 		DDFDFCA82620A0FD009F043A /* CarbonForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFCA72620A0FD009F043A /* CarbonForecast.swift */; };
 		DDFDFCAE2620A18B009F043A /* CarbonIntensityForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFCAD2620A18B009F043A /* CarbonIntensityForecast.swift */; };
 		DDFDFCB32620A1BF009F043A /* CarbonIntensityLevels.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFCB22620A1BF009F043A /* CarbonIntensityLevels.swift */; };
@@ -43,6 +43,8 @@
 		DDFDFD272621EBFB009F043A /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFD262621EBFB009F043A /* ShadowView.swift */; };
 		DDFDFD382622848F009F043A /* ShadowedCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFD372622848F009F043A /* ShadowedCollectionCell.swift */; };
 		DDFDFD4C26229079009F043A /* RegionDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFD4B26229079009F043A /* RegionDetailViewModel.swift */; };
+		DDFDFD672622CEC2009F043A /* APIResponseValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFD662622CEC2009F043A /* APIResponseValidatorTests.swift */; };
+		DDFDFD8C2622D390009F043A /* APIStructureValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFD8B2622D390009F043A /* APIStructureValidator.swift */; };
 		F68DC3E550CEA639AF012D7C /* Pods_Radagast_RadagastUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6BDFFD587005378D898CB94 /* Pods_Radagast_RadagastUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -93,7 +95,7 @@
 		DDFDFC8726209694009F043A /* RegionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionDetailViewController.swift; sourceTree = "<group>"; };
 		DDFDFC9526209B4F009F043A /* DateFormatter+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Ext.swift"; sourceTree = "<group>"; };
 		DDFDFC9D2620A086009F043A /* CarbonFactors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonFactors.swift; sourceTree = "<group>"; };
-		DDFDFCA22620A0A0009F043A /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		DDFDFCA22620A0A0009F043A /* APIStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIStructure.swift; sourceTree = "<group>"; };
 		DDFDFCA72620A0FD009F043A /* CarbonForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonForecast.swift; sourceTree = "<group>"; };
 		DDFDFCAD2620A18B009F043A /* CarbonIntensityForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonIntensityForecast.swift; sourceTree = "<group>"; };
 		DDFDFCB22620A1BF009F043A /* CarbonIntensityLevels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonIntensityLevels.swift; sourceTree = "<group>"; };
@@ -111,6 +113,8 @@
 		DDFDFD262621EBFB009F043A /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		DDFDFD372622848F009F043A /* ShadowedCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowedCollectionCell.swift; sourceTree = "<group>"; };
 		DDFDFD4B26229079009F043A /* RegionDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionDetailViewModel.swift; sourceTree = "<group>"; };
+		DDFDFD662622CEC2009F043A /* APIResponseValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponseValidatorTests.swift; sourceTree = "<group>"; };
+		DDFDFD8B2622D390009F043A /* APIStructureValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIStructureValidator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +214,7 @@
 			children = (
 				DDFDFC2F26208E07009F043A /* RadagastTests.swift */,
 				DDFDFC3126208E07009F043A /* Info.plist */,
+				DDFDFD662622CEC2009F043A /* APIResponseValidatorTests.swift */,
 			);
 			path = RadagastTests;
 			sourceTree = "<group>";
@@ -246,7 +251,7 @@
 		DDFDFC50262090C6009F043A /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				DDFDFCA22620A0A0009F043A /* APIResponse.swift */,
+				DDFDFCA22620A0A0009F043A /* APIStructure.swift */,
 				DDFDFD372622848F009F043A /* ShadowedCollectionCell.swift */,
 			);
 			path = Protocols;
@@ -276,6 +281,7 @@
 				DDFDFCF82620AB87009F043A /* UIViewController+Ext.swift */,
 				DDFDFCFD2620B0C8009F043A /* UIColor+Ext.swift */,
 				DDFDFD2126212CCA009F043A /* UIView+Ext.swift */,
+				DDFDFD8B2622D390009F043A /* APIStructureValidator.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -580,7 +586,8 @@
 				DDFDFC9E2620A086009F043A /* CarbonFactors.swift in Sources */,
 				DDFDFC7926209604009F043A /* RegionCollectionViewCell.swift in Sources */,
 				DDFDFD272621EBFB009F043A /* ShadowView.swift in Sources */,
-				DDFDFCA32620A0A0009F043A /* APIResponse.swift in Sources */,
+				DDFDFD8C2622D390009F043A /* APIStructureValidator.swift in Sources */,
+				DDFDFCA32620A0A0009F043A /* APIStructure.swift in Sources */,
 				DDFDFCFE2620B0C8009F043A /* UIColor+Ext.swift in Sources */,
 				DDFDFC1D26208E06009F043A /* MainViewController.swift in Sources */,
 				DDFDFC1926208E06009F043A /* AppDelegate.swift in Sources */,
@@ -604,6 +611,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDFDFD672622CEC2009F043A /* APIResponseValidatorTests.swift in Sources */,
 				DDFDFC3026208E07009F043A /* RadagastTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

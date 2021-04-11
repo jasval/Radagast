@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct CarbonStatistics: APIResponse {
+struct CarbonStatistics: APIStructure {
+
     let from: Date
     let to: Date
     let intensity: CarbonIntensityLevels
@@ -36,10 +37,9 @@ struct CarbonStatistics: APIResponse {
 
         intensity = try container.decode(CarbonIntensityLevels.self, forKey: .intensity)
     }
-    
-    // Skip Validation
-    func validate() -> Bool {
-        true
+
+    var isValid: Bool {
+        return true
     }
 
 }

@@ -7,7 +7,9 @@
 
 import Foundation
 
-struct CarbonIntensityLevels: Decodable {
+struct CarbonIntensityLevels: APIStructure {
+    var isValid: Bool { true }
+    
     
     let max, average, min: Float
     let index: IntensityIndex
@@ -27,6 +29,13 @@ struct CarbonIntensityLevels: Decodable {
         var string: String {
             self.rawValue.capitalized
         }
+    }
+    
+    init(max: Float, average: Float, min: Float, index: IntensityIndex) {
+        self.max = max
+        self.average = average
+        self.min = min
+        self.index = index
     }
     
     init(from decoder: Decoder) throws {

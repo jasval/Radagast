@@ -7,7 +7,9 @@
 
 import Foundation
 
-struct CarbonIntensityForecast: Decodable {
+struct CarbonIntensityForecast: APIStructure {
+    var isValid: Bool { true }
+    
     let forecast: Float?
     let actual: Float?
     let index: CarbonIntensityLevels.IntensityIndex
@@ -18,6 +20,18 @@ struct CarbonIntensityForecast: Decodable {
         case index
     }
     
+    init(forecast: Float, actual: Float, index: CarbonIntensityLevels.IntensityIndex) {
+        self.forecast = forecast
+        self.actual = actual
+        self.index = index
+    }
+    
+    init() {
+        forecast = 0
+        actual = 0
+        index = .unknown
+    }
+
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         forecast = try container.decode(Float.self, forKey: .forecast)
@@ -31,9 +45,5 @@ struct CarbonIntensityForecast: Decodable {
         }
     }
     
-    init() {
-        forecast = 0
-        actual = 0
-        index = .unknown
-    }
+
 }

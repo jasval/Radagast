@@ -7,7 +7,11 @@
 
 import Foundation
 
-struct GenerationFactor: Decodable {
+struct GenerationFactor: APIStructure {
+    var isValid: Bool {
+        return true
+    }
+    
     let fuel: String
     let percentage: Float
     
