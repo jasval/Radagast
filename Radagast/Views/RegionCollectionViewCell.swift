@@ -1,5 +1,5 @@
 //
-//  GraphedCollectionViewCell.swift
+//  RegionCollectionViewCell.swift
 //  Radagast
 //
 //  Created by Jasper Valdivia on 09/04/2021.
@@ -7,9 +7,9 @@
 
 import UIKit
 
-class GraphedCollectionViewCell: UICollectionViewCell, ShadowedCollectionCell {
+class RegionCollectionViewCell: UICollectionViewCell, ShadowedCollectionCell {
     
-    static let reuseIdentifier = "GraphedCollectionViewCell"
+    static let reuseIdentifier = "RegionCollectionViewCell"
     
     private var title: UILabel = {
         let label = UILabel()
@@ -168,7 +168,7 @@ class GraphedCollectionViewCell: UICollectionViewCell, ShadowedCollectionCell {
     }
     
     //MARK: - Configure cell with data
-    func configure(with data: CarbonTableViewModel.CellData) {
+    func configure(with data: CarbonCollectionViewModel.CellData) {
         title.text = data.name
         provider.text = data.provider
         

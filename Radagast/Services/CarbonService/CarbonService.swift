@@ -175,7 +175,7 @@ final class CarbonService {
                 debugPrint(response.metrics ?? response.serializationDuration)
             }
         case .cIRegionId:
-            AF.request(request).validate(statusCode: 200..<300).responseDecodable(of: CarbonRegionId.self) { response in
+            AF.request(request).validate(statusCode: 200..<300).responseDecodable(of: CarbonRegionIdResponse.self) { response in
                 completionHandler(response.value, response.error)
                 debugPrint(response.metrics ?? response.serializationDuration)
             }

@@ -10,7 +10,7 @@ import UIKit
 class CarbonCollectionViewController: UICollectionViewController {
     
     private lazy var dataSource = makeDataSource()
-    lazy var viewModel = CarbonTableViewModel(self)
+    lazy var viewModel = CarbonCollectionViewModel(self)
     
     private var isTransitioning: Bool = false {
         didSet {
@@ -35,7 +35,7 @@ class CarbonCollectionViewController: UICollectionViewController {
         self.clearsSelectionOnViewWillAppear = false
 
         collectionView.register(HeaderCollectionViewCell.self, forCellWithReuseIdentifier: HeaderCollectionViewCell.reuseIdentifier)
-        collectionView.register(GraphedCollectionViewCell.self, forCellWithReuseIdentifier: GraphedCollectionViewCell.reuseIdentifier)
+        collectionView.register(RegionCollectionViewCell.self, forCellWithReuseIdentifier: RegionCollectionViewCell.reuseIdentifier)
         collectionView.dataSource = dataSource
         configureLayout()
         collectionView.backgroundColor = .systemBackground
@@ -59,7 +59,7 @@ extension CarbonCollectionViewController {
         case main
     }
         
-    private func makeDataSource() -> UICollectionViewDiffableDataSource<Section, CarbonTableViewModel.CellData> {
+    private func makeDataSource() -> UICollectionViewDiffableDataSource<Section, CarbonCollectionViewModel.CellData> {
         return UICollectionViewDiffableDataSource(collectionView: collectionView) { (collectionView, indexPath, listItem) -> UICollectionViewCell? in
             switch indexPath.section {
             case 0:
@@ -68,7 +68,7 @@ extension CarbonCollectionViewController {
                     return cell
                 }
             case 1:
-                if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: GraphedCollectionViewCell.reuseIdentifier, for: indexPath) as? GraphedCollectionViewCell {
+                if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RegionCollectionViewCell.reuseIdentifier, for: indexPath) as? RegionCollectionViewCell {
                     cell.configure(with: listItem)
                     return cell
                 }
@@ -128,8 +128,8 @@ extension CarbonCollectionViewController {
 
 extension CarbonCollectionViewController {
     
-    func update(with list: CarbonTableViewModel.DataList, animate: Bool = true) {
-        var snapshot = NSDiffableDataSourceSnapshot<Section, CarbonTableViewModel.CellData>()
+    func update(with list: CarbonCollectionViewModel.DataList, animate: Bool = true) {
+        var snapshot = NSDiffableDataSourceSnapshot<Section, CarbonCollectionViewModel.CellData>()
         snapshot.appendSections(Section.allCases)
         
         snapshot.appendItems(list.national, toSection: .header)
@@ -138,7 +138,7 @@ extension CarbonCollectionViewController {
         dataSource.apply(snapshot, animatingDifferences: animate)
     }
     
-    func remove(_ data: CarbonTableViewModel.CellData, animate: Bool = true) {
+    func remove(_ data: CarbonCollectionViewModel.CellData, animate: Bool = true) {
         var snapshot = dataSource.snapshot()
         snapshot.deleteItems([data])
         dataSource.apply(snapshot, animatingDifferences: animate)
@@ -153,19 +153,20 @@ extension CarbonCollectionViewController {
         switch indexPath.section {
         case Section.main.rawValue:
             isTransitioning = true
-            let cell = collectionView.cellForItem(at: indexPath) as? ShadowedCollectionCell
+            guard let cell = collectionView.cellForItem(at: indexPath) as? ShadowedCollectionCell else { return }
             UIView.animate(withDuration: 0.2) {
-                cell?.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
-                cell?.transform = CGAffineTransform(translationX: 0, y: 5)
-                cell?.shadowLayer.alpha = 0.0
+                cell.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
+                cell.transform = CGAffineTransform(translationX: 0, y: 5)
+                cell.shadowLayer.alpha = 0.0
             } completion: { _ in
                 UIView.animate(withDuration: 0.2) {
-                    cell?.transform = CGAffineTransform.identity
-                    cell?.shadowLayer.alpha = 1.0
+                    cell.transform = CGAffineTransform.identity
+                    cell.shadowLayer.alpha = 1.0
                 } completion: { [weak self] _ in
-                    self?.navigationController?.pushViewController(DetailViewController(), animated: true)
+                    guard let weakSelf = self, let regionId = weakSelf.viewModel.tableData.regional[indexPath.row].id else { return }
+                    weakSelf.navigationController?.pushViewController(RegionDetailViewController(regionId), animated: true)
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                        self?.isTransitioning = false
+                        weakSelf.isTransitioning = false
                     }
                 }
             }

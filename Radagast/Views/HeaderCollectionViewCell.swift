@@ -29,14 +29,6 @@ class HeaderCollectionViewCell: UICollectionViewCell, ShadowedCollectionCell {
     private var barChart: BarChartView = {
         let view = BarChartView(frame: .zero)
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.drawBarShadowEnabled = false
-        view.drawValueAboveBarEnabled = true
-        view.legend.enabled = false
-        view.legend.drawInside = false
-        view.highlightFullBarEnabled = false
-        view.xAxis.enabled = true
-        view.leftAxis.enabled = false
-        view.rightAxis.enabled = false
         view.backgroundColor = .clear
         return view
     }()
@@ -50,7 +42,7 @@ class HeaderCollectionViewCell: UICollectionViewCell, ShadowedCollectionCell {
         return view
     }()
     
-    internal var shadowLayer: ShadowView = {
+    var shadowLayer: ShadowView = {
         let view = ShadowView()
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
@@ -105,7 +97,7 @@ class HeaderCollectionViewCell: UICollectionViewCell, ShadowedCollectionCell {
     }
     
     //MARK: - Configure cell with data
-    func configure(with data: CarbonTableViewModel.CellData) {
+    func configure(with data: CarbonCollectionViewModel.CellData) {
         title.text = data.name
         if let chartData = data.generationMix, !chartData.isEmpty {
             let values = chartData.map { Double($0.value) }
@@ -115,6 +107,27 @@ class HeaderCollectionViewCell: UICollectionViewCell, ShadowedCollectionCell {
     }
     
     private func customiseChart(dataPoints: [String], values: [Double]) {
+        barChart.drawBarShadowEnabled = false
+        barChart.drawValueAboveBarEnabled = true
+        barChart.legend.enabled = false
+        barChart.legend.drawInside = false
+        barChart.highlightFullBarEnabled = false
+        barChart.xAxis.enabled = true
+        barChart.leftAxis.enabled = false
+        barChart.rightAxis.enabled = false
+        barChart.xAxis.granularity = 0.1
+        barChart.xAxis.labelPosition = .bottom
+        barChart.xAxis.labelRotationAngle = 45.0
+        barChart.xAxis.wordWrapEnabled = false
+        barChart.xAxis.drawGridLinesEnabled = false
+        barChart.xAxis.axisMinLabels = dataPoints.count
+        barChart.xAxis.drawAxisLineEnabled = false
+        barChart.scaleXEnabled = true
+        barChart.scaleYEnabled = false
+        barChart.dragYEnabled = false
+        barChart.xAxis.avoidFirstLastClippingEnabled = true
+        barChart.xAxis.granularityEnabled = true
+        
         // 1. Set ChartDataEntry
         var dataEntries: [BarChartDataEntry] = []
         for i in 0..<dataPoints.count {
@@ -134,18 +147,7 @@ class HeaderCollectionViewCell: UICollectionViewCell, ShadowedCollectionCell {
         // 4. Assign it to the chart’s data
         barChart.data = barChartData
         barChart.xAxis.valueFormatter = IndexAxisValueFormatter(values: dataPoints)
-        barChart.xAxis.granularity = 0.1
-        barChart.xAxis.labelPosition = .bottom
-        barChart.xAxis.labelRotationAngle = 45.0
-        barChart.xAxis.wordWrapEnabled = false
-        barChart.xAxis.drawGridLinesEnabled = false
-        barChart.xAxis.axisMinLabels = dataPoints.count
-        barChart.xAxis.drawAxisLineEnabled = false
-        barChart.scaleXEnabled = true
-        barChart.scaleYEnabled = false
-        barChart.dragYEnabled = false
-        barChart.xAxis.avoidFirstLastClippingEnabled = true
-        barChart.xAxis.granularityEnabled = true
+
         
     }
     
