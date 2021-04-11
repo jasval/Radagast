@@ -13,7 +13,7 @@ extension DateFormatter {
     ///Defaults to ISO8601 date format used by the API of our choosing
     static let carbon: DateFormatter = {
         let df = DateFormatter()
-        df.dateFormat = "YYYY-MM-DDThh:mmZ"
+        df.dateFormat = "YYYY-MM-dd'T'hh:mm'Z'"
         return df
     }()
     

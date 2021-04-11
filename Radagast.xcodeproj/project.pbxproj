@@ -19,10 +19,10 @@
 		DDFDFC602620929F009F043A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DDFDFC5F2620929F009F043A /* Alamofire */; };
 		DDFDFC6F262093CD009F043A /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = DDFDFC6E262093CD009F043A /* Charts */; };
 		DDFDFC74262094AE009F043A /* CarbonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFC73262094AE009F043A /* CarbonService.swift */; };
-		DDFDFC7926209604009F043A /* GraphedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFC7826209604009F043A /* GraphedCollectionViewCell.swift */; };
+		DDFDFC7926209604009F043A /* RegionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFC7826209604009F043A /* RegionCollectionViewCell.swift */; };
 		DDFDFC7E26209646009F043A /* HeaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFC7D26209646009F043A /* HeaderCollectionViewCell.swift */; };
 		DDFDFC8326209667009F043A /* CarbonCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFC8226209667009F043A /* CarbonCollectionViewController.swift */; };
-		DDFDFC8826209694009F043A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFC8726209694009F043A /* DetailViewController.swift */; };
+		DDFDFC8826209694009F043A /* RegionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFC8726209694009F043A /* RegionDetailViewController.swift */; };
 		DDFDFC9626209B4F009F043A /* DateFormatter+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFC9526209B4F009F043A /* DateFormatter+Ext.swift */; };
 		DDFDFC9E2620A086009F043A /* CarbonFactors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFC9D2620A086009F043A /* CarbonFactors.swift */; };
 		DDFDFCA32620A0A0009F043A /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFCA22620A0A0009F043A /* APIResponse.swift */; };
@@ -38,10 +38,11 @@
 		DDFDFCE22620A56D009F043A /* CarbonRegionIdData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFCE12620A56D009F043A /* CarbonRegionIdData.swift */; };
 		DDFDFCF92620AB87009F043A /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFCF82620AB87009F043A /* UIViewController+Ext.swift */; };
 		DDFDFCFE2620B0C8009F043A /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFCFD2620B0C8009F043A /* UIColor+Ext.swift */; };
-		DDFDFD1D2620E1ED009F043A /* CarbonTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFD1C2620E1ED009F043A /* CarbonTableViewModel.swift */; };
+		DDFDFD1D2620E1ED009F043A /* CarbonCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFD1C2620E1ED009F043A /* CarbonCollectionViewModel.swift */; };
 		DDFDFD2226212CCA009F043A /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFD2126212CCA009F043A /* UIView+Ext.swift */; };
 		DDFDFD272621EBFB009F043A /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFD262621EBFB009F043A /* ShadowView.swift */; };
 		DDFDFD382622848F009F043A /* ShadowedCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFD372622848F009F043A /* ShadowedCollectionCell.swift */; };
+		DDFDFD4C26229079009F043A /* RegionDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFD4B26229079009F043A /* RegionDetailViewModel.swift */; };
 		F68DC3E550CEA639AF012D7C /* Pods_Radagast_RadagastUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6BDFFD587005378D898CB94 /* Pods_Radagast_RadagastUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -86,10 +87,10 @@
 		DDFDFC3A26208E07009F043A /* RadagastUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadagastUITests.swift; sourceTree = "<group>"; };
 		DDFDFC3C26208E07009F043A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDFDFC73262094AE009F043A /* CarbonService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CarbonService.swift; path = Radagast/Services/CarbonService/CarbonService.swift; sourceTree = SOURCE_ROOT; };
-		DDFDFC7826209604009F043A /* GraphedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphedCollectionViewCell.swift; sourceTree = "<group>"; };
+		DDFDFC7826209604009F043A /* RegionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionCollectionViewCell.swift; sourceTree = "<group>"; };
 		DDFDFC7D26209646009F043A /* HeaderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionViewCell.swift; sourceTree = "<group>"; };
 		DDFDFC8226209667009F043A /* CarbonCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonCollectionViewController.swift; sourceTree = "<group>"; };
-		DDFDFC8726209694009F043A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		DDFDFC8726209694009F043A /* RegionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionDetailViewController.swift; sourceTree = "<group>"; };
 		DDFDFC9526209B4F009F043A /* DateFormatter+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Ext.swift"; sourceTree = "<group>"; };
 		DDFDFC9D2620A086009F043A /* CarbonFactors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonFactors.swift; sourceTree = "<group>"; };
 		DDFDFCA22620A0A0009F043A /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
@@ -105,10 +106,11 @@
 		DDFDFCE12620A56D009F043A /* CarbonRegionIdData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonRegionIdData.swift; sourceTree = "<group>"; };
 		DDFDFCF82620AB87009F043A /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 		DDFDFCFD2620B0C8009F043A /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
-		DDFDFD1C2620E1ED009F043A /* CarbonTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonTableViewModel.swift; sourceTree = "<group>"; };
+		DDFDFD1C2620E1ED009F043A /* CarbonCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonCollectionViewModel.swift; sourceTree = "<group>"; };
 		DDFDFD2126212CCA009F043A /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 		DDFDFD262621EBFB009F043A /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		DDFDFD372622848F009F043A /* ShadowedCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowedCollectionCell.swift; sourceTree = "<group>"; };
+		DDFDFD4B26229079009F043A /* RegionDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,7 +226,7 @@
 		DDFDFC4E262090BA009F043A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				DDFDFC7826209604009F043A /* GraphedCollectionViewCell.swift */,
+				DDFDFC7826209604009F043A /* RegionCollectionViewCell.swift */,
 				DDFDFC7D26209646009F043A /* HeaderCollectionViewCell.swift */,
 				DDFDFD262621EBFB009F043A /* ShadowView.swift */,
 			);
@@ -236,7 +238,7 @@
 			children = (
 				DDFDFC1C26208E06009F043A /* MainViewController.swift */,
 				DDFDFC8226209667009F043A /* CarbonCollectionViewController.swift */,
-				DDFDFC8726209694009F043A /* DetailViewController.swift */,
+				DDFDFC8726209694009F043A /* RegionDetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -261,7 +263,8 @@
 		DDFDFC52262090D3009F043A /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				DDFDFD1C2620E1ED009F043A /* CarbonTableViewModel.swift */,
+				DDFDFD1C2620E1ED009F043A /* CarbonCollectionViewModel.swift */,
+				DDFDFD4B26229079009F043A /* RegionDetailViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -571,10 +574,11 @@
 				DDFDFC8326209667009F043A /* CarbonCollectionViewController.swift in Sources */,
 				DDFDFCC22620A280009F043A /* GenerationFactor.swift in Sources */,
 				DDFDFCBD2620A240009F043A /* CarbonGeneration.swift in Sources */,
+				DDFDFD4C26229079009F043A /* RegionDetailViewModel.swift in Sources */,
 				DDFDFCAE2620A18B009F043A /* CarbonIntensityForecast.swift in Sources */,
 				DDFDFC9626209B4F009F043A /* DateFormatter+Ext.swift in Sources */,
 				DDFDFC9E2620A086009F043A /* CarbonFactors.swift in Sources */,
-				DDFDFC7926209604009F043A /* GraphedCollectionViewCell.swift in Sources */,
+				DDFDFC7926209604009F043A /* RegionCollectionViewCell.swift in Sources */,
 				DDFDFD272621EBFB009F043A /* ShadowView.swift in Sources */,
 				DDFDFCA32620A0A0009F043A /* APIResponse.swift in Sources */,
 				DDFDFCFE2620B0C8009F043A /* UIColor+Ext.swift in Sources */,
@@ -584,8 +588,8 @@
 				DDFDFC1B26208E06009F043A /* SceneDelegate.swift in Sources */,
 				DDFDFCF92620AB87009F043A /* UIViewController+Ext.swift in Sources */,
 				DDFDFD382622848F009F043A /* ShadowedCollectionCell.swift in Sources */,
-				DDFDFD1D2620E1ED009F043A /* CarbonTableViewModel.swift in Sources */,
-				DDFDFC8826209694009F043A /* DetailViewController.swift in Sources */,
+				DDFDFD1D2620E1ED009F043A /* CarbonCollectionViewModel.swift in Sources */,
+				DDFDFC8826209694009F043A /* RegionDetailViewController.swift in Sources */,
 				DDFDFCA82620A0FD009F043A /* CarbonForecast.swift in Sources */,
 				DDFDFCE22620A56D009F043A /* CarbonRegionIdData.swift in Sources */,
 				DDFDFCCA2620A2DE009F043A /* CarbonGenerationTimeFrame.swift in Sources */,

@@ -20,6 +20,7 @@ struct CarbonRegionId: APIResponse {
         case shortname, postcode
         case data
     }
+    
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         
@@ -42,5 +43,24 @@ struct CarbonRegionId: APIResponse {
     // Skip Validation
     func validate() -> Bool {
         true
+    }
+}
+
+struct CarbonRegionIdResponse: APIResponse {
+
+    let data: CarbonRegionId
+    
+    enum CodingKeys: String, CodingKey {
+        case data
+    }
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        
+        data = try container.decode(CarbonRegionId.self, forKey: .data)
+    }
+    
+    func validate() -> Bool {
+        return true
     }
 }

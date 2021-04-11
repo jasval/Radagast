@@ -90,7 +90,10 @@ class MainViewController: UIViewController {
     }
     
     @objc func refreshTapped(_ sender: UIButton) {
+        let generator = UIImpactFeedbackGenerator(style: .medium)
+        generator.prepare()
         carbonCollection.viewModel.requestData(for: [.all])
+        generator.impactOccurred()
         UIView.animate(withDuration: 0.2,
             animations: { [weak self] in
                 self?.button.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)

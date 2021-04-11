@@ -1,5 +1,5 @@
 //
-//  CarbonTableViewModel.swift
+//  CarbonCollectionViewModel.swift
 //  Radagast
 //
 //  Created by Jasper Valdivia on 09/04/2021.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-class CarbonTableViewModel {
+class CarbonCollectionViewModel {
     
     struct CellData: Hashable {
         var id: Int?
