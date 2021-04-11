@@ -67,7 +67,8 @@ struct CarbonForecastResponse: APIResponse {
         data = dataCollection
     }
     
-    func validate() -> Bool {
+    var isValid: Bool {
         return true
     }
+    
 }

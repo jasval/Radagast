@@ -43,6 +43,8 @@
 		DDFDFD272621EBFB009F043A /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFD262621EBFB009F043A /* ShadowView.swift */; };
 		DDFDFD382622848F009F043A /* ShadowedCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFD372622848F009F043A /* ShadowedCollectionCell.swift */; };
 		DDFDFD4C26229079009F043A /* RegionDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFD4B26229079009F043A /* RegionDetailViewModel.swift */; };
+		DDFDFD672622CEC2009F043A /* APIResponseValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFD662622CEC2009F043A /* APIResponseValidatorTests.swift */; };
+		DDFDFD6C2622CF92009F043A /* APIResponseValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFDFD6B2622CF92009F043A /* APIResponseValidator.swift */; };
 		F68DC3E550CEA639AF012D7C /* Pods_Radagast_RadagastUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6BDFFD587005378D898CB94 /* Pods_Radagast_RadagastUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -111,6 +113,8 @@
 		DDFDFD262621EBFB009F043A /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		DDFDFD372622848F009F043A /* ShadowedCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowedCollectionCell.swift; sourceTree = "<group>"; };
 		DDFDFD4B26229079009F043A /* RegionDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionDetailViewModel.swift; sourceTree = "<group>"; };
+		DDFDFD662622CEC2009F043A /* APIResponseValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponseValidatorTests.swift; sourceTree = "<group>"; };
+		DDFDFD6B2622CF92009F043A /* APIResponseValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponseValidator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +214,7 @@
 			children = (
 				DDFDFC2F26208E07009F043A /* RadagastTests.swift */,
 				DDFDFC3126208E07009F043A /* Info.plist */,
+				DDFDFD662622CEC2009F043A /* APIResponseValidatorTests.swift */,
 			);
 			path = RadagastTests;
 			sourceTree = "<group>";
@@ -276,6 +281,7 @@
 				DDFDFCF82620AB87009F043A /* UIViewController+Ext.swift */,
 				DDFDFCFD2620B0C8009F043A /* UIColor+Ext.swift */,
 				DDFDFD2126212CCA009F043A /* UIView+Ext.swift */,
+				DDFDFD6B2622CF92009F043A /* APIResponseValidator.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -580,6 +586,7 @@
 				DDFDFC9E2620A086009F043A /* CarbonFactors.swift in Sources */,
 				DDFDFC7926209604009F043A /* RegionCollectionViewCell.swift in Sources */,
 				DDFDFD272621EBFB009F043A /* ShadowView.swift in Sources */,
+				DDFDFD6C2622CF92009F043A /* APIResponseValidator.swift in Sources */,
 				DDFDFCA32620A0A0009F043A /* APIResponse.swift in Sources */,
 				DDFDFCFE2620B0C8009F043A /* UIColor+Ext.swift in Sources */,
 				DDFDFC1D26208E06009F043A /* MainViewController.swift in Sources */,
@@ -604,6 +611,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDFDFD672622CEC2009F043A /* APIResponseValidatorTests.swift in Sources */,
 				DDFDFC3026208E07009F043A /* RadagastTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

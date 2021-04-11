@@ -8,5 +8,5 @@
 import Foundation
 
 protocol APIResponse: Decodable {
-    func validate() -> Bool
+    var isValid: Bool { get }
 }

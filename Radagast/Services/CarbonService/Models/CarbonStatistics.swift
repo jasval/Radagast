@@ -38,7 +38,7 @@ struct CarbonStatistics: APIResponse {
     }
     
     // Skip Validation
-    func validate() -> Bool {
+    func isValid() -> Bool {
         true
     }
 

@@ -49,7 +49,7 @@ struct CarbonFactors: APIResponse {
     }
     
     // Skip Validation
-    func validate() -> Bool {
+    func isValid() -> Bool {
         true
     }
 

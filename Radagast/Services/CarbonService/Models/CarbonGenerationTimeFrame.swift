@@ -70,7 +70,7 @@ struct CarbonGenerationTimeFrameResponse: APIResponse {
         data = dataCollection
     }
     
-    func validate() -> Bool {
+    func isValid() -> Bool {
         return true
     }
 

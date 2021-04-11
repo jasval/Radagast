@@ -41,7 +41,7 @@ struct CarbonRegionId: APIResponse {
     }
     
     // Skip Validation
-    func validate() -> Bool {
+    func isValid() -> Bool {
         true
     }
 }
@@ -60,7 +60,7 @@ struct CarbonRegionIdResponse: APIResponse {
         data = try container.decode(CarbonRegionId.self, forKey: .data)
     }
     
-    func validate() -> Bool {
+    func isValid() -> Bool {
         return true
     }
 }
