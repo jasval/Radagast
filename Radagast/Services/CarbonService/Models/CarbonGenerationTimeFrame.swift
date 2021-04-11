@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CarbonGenerationTimeFrame: APIResponse {
+struct CarbonGenerationTimeFrame: Decodable {
     let from: Date
     let to: Date
     let regions: [CarbonRegion]
