@@ -22,5 +22,6 @@ import UIKit
         shakeGroup.animations = [translation, rotation]
         shakeGroup.duration = duration
         layer.add(shakeGroup, forKey: "shakeIt")
+        
     }
 }
