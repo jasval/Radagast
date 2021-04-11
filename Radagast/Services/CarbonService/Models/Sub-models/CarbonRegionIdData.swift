@@ -7,7 +7,9 @@
 
 import Foundation
 
-struct CarbonRegionIdData: Decodable {
+struct CarbonRegionIdData: APIStructure {
+    var isValid: Bool { true }
+    
     let from: Date
     let to: Date
     let intensity: CarbonIntensityForecast

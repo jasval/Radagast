@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CarbonGeneration: APIResponse {
+struct CarbonGeneration: APIStructure {
     let from: Date?
     let to: Date?
     let generationMix: [GenerationFactor]?
@@ -52,8 +52,7 @@ struct CarbonGeneration: APIResponse {
         generationMix = mix
     }
     
-    // Skip Validation
-    func isValid() -> Bool {
+    var isValid: Bool {
         true
     }
 

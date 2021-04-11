@@ -7,15 +7,26 @@
 
 import Foundation
 
-struct CarbonForecast: Decodable {
+struct CarbonForecast: APIStructure {
     let from: Date
     let to: Date
-    let cIntensity: CarbonIntensityForecast
+    let intensity: CarbonIntensityForecast
     
     enum CodingKeys: String, CodingKey {
         case from
         case to
         case cIntensity = "intensity"
+    }
+    
+    /// Method with DI for TDD
+    /// - Parameters:
+    ///   - from: from date
+    ///   - to: to date
+    ///   - intensity: intensity struct with forecasting values
+    init(from: Date, to: Date, intensity: CarbonIntensityForecast) {
+        self.from = from
+        self.to = to
+        self.intensity = intensity
     }
     
     init(from decoder: Decoder) throws {
@@ -36,22 +47,27 @@ struct CarbonForecast: Decodable {
             to = Date(timeIntervalSince1970: 0)
         }
         
-        cIntensity = try container.decode(CarbonIntensityForecast.self, forKey: .cIntensity)
+        intensity = try container.decode(CarbonIntensityForecast.self, forKey: .cIntensity)
     }
     
-    // Skip Validation
-    func validate() -> Bool {
-        true
+    var isValid: Bool {
+        APIStructureValidator.shared.isCarbonForecastValid(self)
     }
 
 }
 
-struct CarbonForecastResponse: APIResponse {
+struct CarbonForecastResponse: APIStructure {
 
     let data: [CarbonForecast]
     
     enum CodingKeys: String, CodingKey {
         case data
+    }
+    
+    /// Method with DI for TDD
+    /// - Parameter data: data containing CarbonForecast structs
+    init(data: [CarbonForecast]) {
+        self.data = data
     }
     
     init(from decoder: Decoder) throws {
@@ -68,7 +84,7 @@ struct CarbonForecastResponse: APIResponse {
     }
     
     var isValid: Bool {
-        return true
+        APIStructureValidator.shared.isCarbonForecastResponseValid(self)
     }
     
 }

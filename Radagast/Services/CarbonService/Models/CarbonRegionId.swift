@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CarbonRegionId: APIResponse {
+struct CarbonRegionId: APIStructure {
     let id: Float
     let dno: String
     let shortname: String
@@ -40,13 +40,13 @@ struct CarbonRegionId: APIResponse {
         data = dataItems
     }
     
-    // Skip Validation
-    func isValid() -> Bool {
-        true
+    var isValid: Bool {
+        return true
     }
+    
 }
 
-struct CarbonRegionIdResponse: APIResponse {
+struct CarbonRegionIdResponse: APIStructure {
 
     let data: CarbonRegionId
     
@@ -60,7 +60,7 @@ struct CarbonRegionIdResponse: APIResponse {
         data = try container.decode(CarbonRegionId.self, forKey: .data)
     }
     
-    func isValid() -> Bool {
-        return true
+    var isValid: Bool {
+        true
     }
 }

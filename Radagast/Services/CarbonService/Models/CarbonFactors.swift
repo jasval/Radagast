@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CarbonFactors: APIResponse {
+struct CarbonFactors: APIStructure {
     
     // TODO: We could use color coded labels or icons for the different values from these factors by separating them in percentiles
     let biomass, coal, dutchImports, frenchImports, irishImports, gasCombinedCycle, gasOpenCycle, hydro, nuclear, oil, other, pumpedStorage, solar, wind: Float?
@@ -48,9 +48,7 @@ struct CarbonFactors: APIResponse {
         wind = try container.decode(Float.self, forKey: .wind)
     }
     
-    // Skip Validation
-    func isValid() -> Bool {
-        true
+    var isValid: Bool {
+        return true
     }
-
 }

@@ -156,7 +156,7 @@ final class CarbonService {
     // MARK: - API Interaction
     
     // Functions
-    public func getDataFor(_ router: Router, completionHandler: @escaping (APIResponse?, Error?) -> Void) throws {
+    public func getDataFor(_ router: Router, completionHandler: @escaping (APIStructure?, Error?) -> Void) throws {
         let request = try router.asURLRequest()
         switch router.decodableType {
         case .cIFactors:

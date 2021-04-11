@@ -118,17 +118,17 @@ class CarbonCollectionViewModel {
 
         if tableData.national.isEmpty {
             tableData.national.append(CellData(name: "National",
-                                               forecasted: data.cIntensity.forecast,
-                                               levels: data.cIntensity.actual,
-                                               index: data.cIntensity.index,
+                                               forecasted: data.intensity.forecast,
+                                               levels: data.intensity.actual,
+                                               index: data.intensity.index,
                                                fromTo: dateString,
                                                lastUpdated: nowString))
         } else if let previousModel = tableData.national.first {
             let model = CellData(id: nil,
                                  name: "National CO2 Distribution",
-                                 forecasted: data.cIntensity.forecast,
-                                 levels: data.cIntensity.actual,
-                                 index: data.cIntensity.index,
+                                 forecasted: data.intensity.forecast,
+                                 levels: data.intensity.actual,
+                                 index: data.intensity.index,
                                  fromTo: dateString,
                                  lastUpdated: nowString,
                                  generationMix: previousModel.generationMix)

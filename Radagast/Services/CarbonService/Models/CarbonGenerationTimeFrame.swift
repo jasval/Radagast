@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CarbonGenerationTimeFrame: Decodable {
+struct CarbonGenerationTimeFrame: APIStructure {
     let from: Date
     let to: Date
     let regions: [CarbonRegion]
@@ -45,12 +45,12 @@ struct CarbonGenerationTimeFrame: Decodable {
     }
     
     // Skip Validation
-    func validate() -> Bool {
+    var isValid: Bool {
         true
     }
 }
 
-struct CarbonGenerationTimeFrameResponse: APIResponse {
+struct CarbonGenerationTimeFrameResponse: APIStructure {
     let data: [CarbonGenerationTimeFrame]
     
     enum CodingKeys: String, CodingKey {
@@ -70,7 +70,7 @@ struct CarbonGenerationTimeFrameResponse: APIResponse {
         data = dataCollection
     }
     
-    func isValid() -> Bool {
+    var isValid: Bool {
         return true
     }
 
